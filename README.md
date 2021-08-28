@@ -1,1 +1,1 @@
-# clientes-django
+# Aplicativo de Exemplo em Django
