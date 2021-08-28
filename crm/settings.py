@@ -10,7 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
-from crm.local_settings import DATABASES
 from pathlib import Path
 import os
 import dj_database_url
