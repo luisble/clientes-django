@@ -1,0 +1,23 @@
+{% extends "model-page.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+    <form method='POST'>{% csrf_token %}
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <p class="h3">Confirma a exclusão do cliente {{ customer.get_full_name }}?</p>
+                </div>
+            </div>        
+            <div class="row justify-content-start">
+                <div class="col-4">
+                    <button type="submit" class="btn btn-danger">Sim</button>
+                </div>
+                <div class="col-4">
+                <a href="{% url 'customer:customer-list' %}"><button type="button" class="btn btn-primary">Não</button></a>
+                </div>
+                <div class="col-4"></div>
+            </div>
+        </div>
+    </form>
+{% endblock %}
