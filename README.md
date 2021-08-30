@@ -4,4 +4,4 @@ Não esquecer de configurar a variável de ambiente SECRET_KEY, ou capturá-la d
 
 e no ambiente de dev configurar a variável DJANGO_SETTINGS_MODULE, conforme abaixo:
 
-DJANGO_SETTINGS_MODULE=crm.local_setting
+DJANGO_SETTINGS_MODULE=crm.local_settings
